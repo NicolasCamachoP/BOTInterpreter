@@ -1,0 +1,163 @@
+$1=1+1;
+$1=1;
+$1>1;
+$1>-1;
+$2<2;
+$2<2*10000000;
+$2<=2/100000;
+$10000<=10000;
+$10000/10<=10000;
+$1>=10000;
+$10000>=10000;
+$10000>=10000/10;
+$"FTFTFTFTTFTT";
+$"Termina comparaciones";
+$2*8-(--2)+7/2;
+if 1+77=79*100/100-1 ->
+	$"Debe salir";
+end;
+if (3+3)=6 ->
+	$3;
+end;
+'miVariable;
+miVariable <- 5;
+$miVariable;
+miVariable <- miVariable - 1;
+if miVariable = 4 ->
+	$"Es cuatro";
+else
+	$"Algo esta mal";
+end;
+'x <- (1+77)=(79*100/100-1);
+$x;
+if x = @T ->
+	$"Guarda bien";
+end;
+$"hola\"";
+$"hola " + 1;
+$"hola " + x;
+$"Teste de alcance de variables";
+'i <- 0;
+while i <= 5 ->
+	$i;
+	i <- i + 1;
+end;
+if i = 0 ->
+	$"Algo esta mal";
+	while i <= 10 ->
+		$"Segundo while con i: "+i;
+		i <- i + 1;
+	end;
+else
+	$"funciona correctamente";
+	$"i: " + i;
+	if i = 6 ->
+		$"Segunda comprobación aprobada";
+		'i <- 2;
+		if i < 6 ->
+			$"Segundo i: " + i;
+			'j <- 9;
+		end;
+	else
+		$"Segunda comprobación reprobada";
+	end;
+end; 
+$i;
+if 1+77=79*100/100-1 ->
+	$"Debe salir";
+end;
+'var <- 5;
+$"Tabla verdad and";
+if var = 5 & @T ->
+	$@T;
+else
+	$@F;
+end;
+if var = 5 & @F ->
+	$@T;
+else
+	$@F;
+end;
+if var = 4 & @T ->
+	$@T;
+else
+	$@F;
+end;
+if var = 4 & @F ->
+	$@T;
+else
+	$@F;
+end;
+$"Tabla verdad or";
+if var = 5 | @T ->
+	$@T;
+else
+	$@F;
+end;
+if var = 5 | @F ->
+	$@T;
+else
+	$@F;
+end;
+if var = 4 | @T ->
+	$@T;
+else
+	$@F;
+end;
+if var = 4 | @F ->
+	$@T;
+else
+	$@F;
+end;
+$"Prueba del \"not\"";
+if 1 != 2 ->
+	$@T;
+else
+	$@F;
+end;
+if !@F ->
+	$"Correcto";
+end;
+$!1!=2;
+$1=1;
+$1+77=79*100/100-1;
+$!1!=2 | 1=1 & 1+77=79*100/100-1;
+$(4-4)*(1+5*7*9);
+$"";
+$"Test de funciones";
+define miFuncion('n) ->
+	'iter <- 0;
+	while iter < n ->
+		$"Hola " + iter;
+		iter <- iter + 1;
+	end;
+end;
+miFuncion(5);
+$"";
+$"Probando en un while";
+$"";
+'i <- 1;
+while(i < 5) ->
+	$"";
+	$"Ciclo "+ i;
+	miFuncion(i);
+	i <- i + 1;
+end;
+$"";
+$"Test enunciado";
+define diagonal('length) ->
+	'counter <- 0;
+	while (counter < length) ->
+		^ 1;
+		> 1;
+		counter <- counter + 1;
+	end;
+	$ "diagonal terminada";
+end;
+'a;
+? a;
+if a = "N" & (2+3*5 >= 6) | (60-6/2 <> 8) ->
+	diagonal(5);
+end;
+$ a;
+$"Termina";
