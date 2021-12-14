@@ -1,5 +1,5 @@
 # BOT Interpreter
-A defined programing language using Antler that works on Java and have access to an API that allows to control a BOT wich movements can be seen in real time.
+A defined programing language using Antlr that works on Java and have access to an API that allows to control a BOT wich movements can be seen in real time.
 
 ## Usage
 
